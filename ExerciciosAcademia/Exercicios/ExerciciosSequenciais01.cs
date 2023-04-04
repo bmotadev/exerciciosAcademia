@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Runtime.Intrinsics.X86;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace ExerciciosAcademia.Exercicios
@@ -149,8 +151,23 @@ namespace ExerciciosAcademia.Exercicios
             salarioTotal = salarioTotal + salarioFixo;
 
             Console.WriteLine($"O número do vendedor: {numeroVendedor}. O salario total é de R$ {salarioTotal:f2}");
+        }
+        public void Exercicio08 ()
+        {
+            // 8) Ler uma temperatura em graus Celsius e apresentá-la convertida em graus Fahrenheit. 
+            // A fórmula da conversão é F = (9 * C + 160) / 5.
+            Console.WriteLine("Exercicio 08");
+
+            Console.WriteLine("Digite a temperatura em Celsius:");
+            double temperaturaCelsius = double.Parse(Console.ReadLine());
+
+            double temperaturaFahrenheit = ((9 * temperaturaCelsius) + 160) / 5;
+
+            Console.WriteLine($"A temperatura em Fahrenheit é: {temperaturaFahrenheit:f1}");
 
         }
+
+
 
     }
 }
