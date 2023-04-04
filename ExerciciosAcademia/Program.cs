@@ -1,10 +1,16 @@
-﻿namespace ExerciciosAcademia
+﻿using ExerciciosAcademia.Exercicios;
+
+namespace ExerciciosAcademia
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            ExerciciosSequenciais01 exercicios = new ExerciciosSequenciais01();
+
+            exercicios.Exercicio01();
+
+            
         }
     }
 }
