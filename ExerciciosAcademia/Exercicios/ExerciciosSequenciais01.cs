@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Runtime.ConstrainedExecution;
 using System.Runtime.Intrinsics.X86;
+using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -167,7 +170,60 @@ namespace ExerciciosAcademia.Exercicios
 
         }
 
+        public void Exercicio09 ()
+        {
+            // 9) Uma loja vende seus produtos no sistema de entrada mais duas prestações, sendo a entrada maior
+            // do que ou igual às prestações, que devem ser iguais, inteiras e as maiores possíveis.
+            // Por exemplo, se o valor da mercadoria for R$ 270, 00, a entrada e as duas prestações são iguais a R$ 90, 00;
+            // se o valor da mercadoria for R$ 302, 75 a entrada é de R$ 102, 75 e as duas prestações são iguais a R$ 100, 00.
+            // Escreva um programa em C# e no Visual Studio que receba o valor da mercadoria e forneça o valor 
+            // da entrada e das duas prestações, de acordo com as regras acima.
+            // Observe que uma justificativa para a adoção desta regra é que ela facilita a confecção e o
+            // conseqüente pagamento dos boletos das duas prestações.
+        }
 
+
+        public void Exercicio10 ()
+        {
+            // 10) Um programa para gerenciar os saques de um caixa eletrônico deve possuir algum mecanismo
+            // para decidir o número de notas de cada valor que deve ser disponibilizado para o cliente que
+            // realizou o saque. Um possível critério seria o da “distribuição ótima” no sentido de que as
+            // notas de menor valor fossem distribuídas em número mínimo possível.
+            // Por exemplo, se a quantia solicitada fosse R$ 87,00 o programa deveria indicar uma nota de R$ 50,00, uma nota de R$ 20,00,
+            // uma nota de R$ 10,00, uma nota de R$ 5,00 e duas notas de R$ 1,00.
+            // Escreva um programa que receba o valor da quantia solicitada e retorne a distribuição das notas
+            // de acordo com o critério da “distribuição ótima”.
+        }
+
+
+        public void Exercicio11 ()
+        {
+            // 11) Escreva um algoritmo para ler o número de eleitores de um município,
+            // o número de votos brancos, nulos e válidos. 
+            // Calcule e escreva o percentual que cada um  representa em relação ao total de eleitores.
+        }
+
+        public void Exercicio12 ()
+        {
+        // 12) Um motorista de taxi deseja calcular o rendimento de seu carro na praça.Sabendo - se que o preço do combustível é de R$6,90, escreva um algoritmo para ler a
+        // marcação do odômetro(marcador de quilometragem) no início do dia, a marcação no final do dia, o número de litros de combustível gasto e o valor total(R$) recebido
+        // dos passageiros.Calcule e escreva a média do consumo em Km / l e o lucro líquido do dia.
+
+        // Fórmulas: Total quilometragem = marcação odômetro final do dia - marcação odômetro inicio do dia
+
+        // Média do consumo = Total quilometragem / quantidade de combustível gasto
+
+        // Lucro do dia = Valor total recebido - (quantidade de combustível gasto * 6,90)
+
+
+        }
+
+        public void Exercicio13 ()
+        {
+            // 13) Uma loja vende bicicletas com um acréscimo de 50 % sobre o preço de custo. Ela paga a cada vendedor 2 salários mínimos mensais, mais uma comissão de 15 % sobre o
+            // preço de custo de cada bicicleta vendida. Desenvolva um algoritmo que leia o valor do salário mínimo, o preço de custo de cada bicicleta e o número de bicicletas
+            // vendidas pelo vendedor, calcule e mostre: o salário do empregado
+        }
 
     }
 }
