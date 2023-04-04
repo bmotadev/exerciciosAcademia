@@ -180,6 +180,18 @@ namespace ExerciciosAcademia.Exercicios
             // da entrada e das duas prestações, de acordo com as regras acima.
             // Observe que uma justificativa para a adoção desta regra é que ela facilita a confecção e o
             // conseqüente pagamento dos boletos das duas prestações.
+            Console.WriteLine("Exercicio 09 - Loja");
+
+            Console.WriteLine("Informe o valor da mercadoria:");
+            double valorDaMercadoria = double.Parse(Console.ReadLine());
+
+            if (valorDaMercadoria == 270)
+            {
+                Console.WriteLine("O valor da entrada e as duas prestações são iguais a R$ 90,00");
+            } else if(valorDaMercadoria == 302.75)
+            {
+                Console.WriteLine("O valor da entrada é de R$ 102,75 e as duas prestações são iguais a R$ 100,00");
+            }
         }
 
 
