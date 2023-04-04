@@ -13,7 +13,8 @@ namespace ExerciciosAcademia
             //exercicios.Exercicio03();
             //exercicios.Exercicio04();
             //exercicios.Exercicio05();
-            exercicios.Exercicio06();
+            //exercicios.Exercicio06();
+            exercicios.Exercicio07();
 
             
         }

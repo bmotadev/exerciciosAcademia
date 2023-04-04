@@ -123,7 +123,32 @@ namespace ExerciciosAcademia.Exercicios
             valorTotal = valorTotal + (valorTotal * porcentagemIpi);
 
             Console.WriteLine($"O valor total é de R$ {valorTotal:f2}");
+            Console.WriteLine();
+        }
 
+        public void Exercicio07 () 
+        {
+            // 7) Escreva um programa em C# e no Visual Studio que leia o número de um vendedor, o seu salário fixo, 
+            // o total de vendas por ele efetuadas e o percentual que ganha sobre o total de vendas. 
+            // Calcule o salário total do vendedor.Escreva o número do vendedor e o salário total do vendedor.
+            Console.WriteLine("Exercicio 07");
+
+            Console.WriteLine("Digite o número do vendedor:");
+            int numeroVendedor = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o salário fixo:");
+            double salarioFixo = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Valor total de vendas efetuadas:");
+            double totalDeVendas = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Percentual sobre o total de vendas:");
+            double percentualDaVenda = double.Parse(Console.ReadLine());
+
+            double salarioTotal = totalDeVendas * (percentualDaVenda / 100);
+            salarioTotal = salarioTotal + salarioFixo;
+
+            Console.WriteLine($"O número do vendedor: {numeroVendedor}. O salario total é de R$ {salarioTotal:f2}");
 
         }
 
