@@ -104,21 +104,25 @@ namespace ExerciciosAcademia.Exercicios
             Console.WriteLine("Exercicio 06");
 
             Console.WriteLine("Digite a quantidade de parafusos A:");
-            int parafusosA = int.Parse(Console.ReadLine());
+            int quantidadeParafusosA = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite o valor do parafuso A:");
             double valorParafusoA = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite a quantidade de parafusos B:");
-            int parafusosB = int.Parse(Console.ReadLine());
+            int quantidadeParafusosB = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite o valor do parafuso B:");
             double valorParafusoB = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite a porcentagem de IPI:");
             double porcentagemIpi = double.Parse(Console.ReadLine());
+            porcentagemIpi = porcentagemIpi / 100;
 
+            double valorTotal = (valorParafusoA * quantidadeParafusosA) + (valorParafusoB * quantidadeParafusosB);
+            valorTotal = valorTotal + (valorTotal * porcentagemIpi);
 
+            Console.WriteLine($"O valor total é de R$ {valorTotal:f2}");
 
 
         }
