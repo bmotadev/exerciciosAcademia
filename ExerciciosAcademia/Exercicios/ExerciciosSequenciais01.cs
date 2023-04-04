@@ -63,6 +63,18 @@ namespace ExerciciosAcademia.Exercicios
         {
             // 4) Faça um programa em C# e no Visual Studio que receba a data na forma DDMMAAAA e imprima na 
             // forma AAAAMMDD e AAMMDD. Note que o dia, o mês e o ano devem ser lidos em variáveis diferentes.
+            Console.WriteLine("Exercicio 04");
+
+            Console.WriteLine("Digite o dia:");
+            string dia = Console.ReadLine();
+
+            Console.WriteLine("Digite o mês:");
+            string mes = Console.ReadLine();
+
+            Console.WriteLine("Digite o ano:");
+            string ano = Console.ReadLine();
+
+            Console.WriteLine($"{ano}{mes}{dia}");
         }
 
 
@@ -81,6 +93,33 @@ namespace ExerciciosAcademia.Exercicios
             double mediaDeConsumo = distanciaTotalPercorrida / combustivelConsumido;
 
             Console.WriteLine($"Sua média de consumo foi: {mediaDeConsumo:f2}");
+
+        }
+
+        public void Exercicio06 ()
+        {
+            // 6) Escreva um programa em C# e no Visual Studio que leia os dados para o parafuso A e para o parafuso B, 
+            //   isto é, o código, a quantidade de peças e o valor unitário de cada parafuso e a porcentagem
+            //    de IPI(única) a ser acrescentada.
+            Console.WriteLine("Exercicio 06");
+
+            Console.WriteLine("Digite a quantidade de parafusos A:");
+            int parafusosA = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor do parafuso A:");
+            double valorParafusoA = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite a quantidade de parafusos B:");
+            int parafusosB = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor do parafuso B:");
+            double valorParafusoB = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite a porcentagem de IPI:");
+            double porcentagemIpi = double.Parse(Console.ReadLine());
+
+
+
 
         }
 
