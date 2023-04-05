@@ -239,6 +239,27 @@ namespace ExerciciosAcademia.Exercicios
             // 11) Escreva um algoritmo para ler o número de eleitores de um município,
             // o número de votos brancos, nulos e válidos. 
             // Calcule e escreva o percentual que cada um  representa em relação ao total de eleitores.
+            Console.WriteLine("Exercicio 11");
+
+            Console.WriteLine("Digite o número de eleitores do município:");
+            double eleitores = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o número de votos brancos:");
+            double votosBrancos = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o número de votos nulos:");
+            double votosNulos = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o número de votos válidos:");
+            double votosValidos = double.Parse(Console.ReadLine());
+
+            double percentualVotosBrancos = (votosBrancos / eleitores) * 100;
+            double percentualVotosNulos = (votosNulos / eleitores) * 100;
+            double percentualVotosValidos = (votosValidos / eleitores) * 100;
+
+            Console.WriteLine($"\nVotos brancos: {percentualVotosBrancos:f1}%.\nVotos nulos: {percentualVotosNulos:f1}%.\nVotos válidos: {percentualVotosValidos:f1}%");
+            
+
         }
 
         public void Exercicio12 ()
