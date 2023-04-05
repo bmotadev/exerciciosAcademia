@@ -264,17 +264,36 @@ namespace ExerciciosAcademia.Exercicios
 
         public void Exercicio12 ()
         {
-        // 12) Um motorista de taxi deseja calcular o rendimento de seu carro na praça.Sabendo - se que o preço do combustível é de R$6,90, escreva um algoritmo para ler a
-        // marcação do odômetro(marcador de quilometragem) no início do dia, a marcação no final do dia, o número de litros de combustível gasto e o valor total(R$) recebido
-        // dos passageiros.Calcule e escreva a média do consumo em Km / l e o lucro líquido do dia.
+            // 12) Um motorista de taxi deseja calcular o rendimento de seu carro na praça.Sabendo - se que o preço do combustível é de R$6,90, escreva um algoritmo para ler a
+            // marcação do odômetro(marcador de quilometragem) no início do dia, a marcação no final do dia, o número de litros de combustível gasto e o valor total(R$) recebido
+            // dos passageiros.Calcule e escreva a média do consumo em Km / l e o lucro líquido do dia.
 
-        // Fórmulas: Total quilometragem = marcação odômetro final do dia - marcação odômetro inicio do dia
+            // Fórmulas: Total quilometragem = marcação odômetro final do dia - marcação odômetro inicio do dia
 
-        // Média do consumo = Total quilometragem / quantidade de combustível gasto
+            // Média do consumo = Total quilometragem / quantidade de combustível gasto
 
-        // Lucro do dia = Valor total recebido - (quantidade de combustível gasto * 6,90)
+            // Lucro do dia = Valor total recebido - (quantidade de combustível gasto * 6,90)
+            Console.WriteLine("Exercicio 12 - Média de Consumo");
 
+            Console.WriteLine("Informe a quilometragem inicial:");
+            double quilometragemInicial = double.Parse(Console.ReadLine());
 
+            Console.WriteLine("Informe a quilometragem final:");
+            double quilometragemFinal = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe o número de litros de combustivel gasto:");
+            double combustivelGasto = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Valor total recebido dos passageiros");
+            double valorTotalPassageiros = double.Parse(Console.ReadLine());
+
+            double totalQuilometragem = quilometragemFinal - quilometragemInicial;
+
+            double mediaConsumo = totalQuilometragem / combustivelGasto;
+
+            double lucroDoDia = valorTotalPassageiros - (combustivelGasto * 6.90);
+
+            Console.WriteLine($"Sua média de consumo de combustivel foi de {mediaConsumo:f2}Km/l. E seu lucro do dia foi de R$ {lucroDoDia:f2}");
         }
 
         public void Exercicio13 ()
