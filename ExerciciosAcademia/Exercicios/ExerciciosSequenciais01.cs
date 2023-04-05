@@ -154,6 +154,7 @@ namespace ExerciciosAcademia.Exercicios
             salarioTotal = salarioTotal + salarioFixo;
 
             Console.WriteLine($"O número do vendedor: {numeroVendedor}. O salario total é de R$ {salarioTotal:f2}");
+            Console.WriteLine();
         }
         public void Exercicio08 ()
         {
@@ -167,6 +168,7 @@ namespace ExerciciosAcademia.Exercicios
             double temperaturaFahrenheit = ((9 * temperaturaCelsius) + 160) / 5;
 
             Console.WriteLine($"A temperatura em Fahrenheit é: {temperaturaFahrenheit:f1}");
+            Console.WriteLine();
 
         }
 
@@ -192,6 +194,7 @@ namespace ExerciciosAcademia.Exercicios
             {
                 Console.WriteLine("O valor da entrada é de R$ 102,75 e as duas prestações são iguais a R$ 100,00");
             }
+            Console.WriteLine();
         }
 
 
@@ -205,6 +208,29 @@ namespace ExerciciosAcademia.Exercicios
             // uma nota de R$ 10,00, uma nota de R$ 5,00 e duas notas de R$ 1,00.
             // Escreva um programa que receba o valor da quantia solicitada e retorne a distribuição das notas
             // de acordo com o critério da “distribuição ótima”.
+            Console.WriteLine("Exercicio 10");
+
+            Console.WriteLine("Digite a quantidade desejada");
+            int quantiaSolicitada = int.Parse(Console.ReadLine());
+
+            int nota50 = quantiaSolicitada / 50;
+            int valorRestante = quantiaSolicitada % 50;
+
+            int nota20 = valorRestante / 20;
+            valorRestante = valorRestante % 20;
+
+            int nota10 = valorRestante / 10;
+            valorRestante = valorRestante % 10;
+
+            int nota5 = valorRestante / 5;
+            valorRestante = valorRestante % 5;
+
+            int nota1 = valorRestante / 1;
+            valorRestante = valorRestante % 1;
+
+            Console.WriteLine($"{nota50} notas de R$ 50,00. {nota20} notas de R$ 20,00. {nota10} notas de R$ 10,00. {nota5} notas de R$ 5,00. {nota1} notas de R$ 1,00");
+
+
         }
 
 
