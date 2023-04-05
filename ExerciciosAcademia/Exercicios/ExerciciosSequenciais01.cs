@@ -301,6 +301,30 @@ namespace ExerciciosAcademia.Exercicios
             // 13) Uma loja vende bicicletas com um acréscimo de 50 % sobre o preço de custo. Ela paga a cada vendedor 2 salários mínimos mensais, mais uma comissão de 15 % sobre o
             // preço de custo de cada bicicleta vendida. Desenvolva um algoritmo que leia o valor do salário mínimo, o preço de custo de cada bicicleta e o número de bicicletas
             // vendidas pelo vendedor, calcule e mostre: o salário do empregado
+            Console.WriteLine("Exercicio 13");
+
+            Console.WriteLine("Informe o valor do salário mínimo:");
+            double salarioMinimo = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe o preço de custo de cada bicicleta:");
+            double precoDeCustoBicicleta = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe o número de bicicletas vendidas:");
+            double numBicicletasVendidas = double.Parse(Console.ReadLine());
+
+            // valor da bicicleta
+            double valorTotalDaBicicleta = precoDeCustoBicicleta + (precoDeCustoBicicleta * 0.50);
+            //calcular salario
+            double salario = salarioMinimo * 2;
+            // calcular comissão
+            double comissao = (precoDeCustoBicicleta + (precoDeCustoBicicleta * 0.15)) * numBicicletasVendidas;
+
+            double salarioDoEmpregado = salario + comissao;
+
+            Console.WriteLine($"O salário do vendedor é R$ {salarioDoEmpregado:f2}");
+
+
+
         }
 
     }
