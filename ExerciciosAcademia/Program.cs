@@ -25,8 +25,9 @@ namespace ExerciciosAcademia
             ExerciciosSelecao02 exerciciosSelecao = new ExerciciosSelecao02();
 
             //exerciciosSelecao.Exercicio01();
-            exerciciosSelecao.Exercicio02();
-
+            //exerciciosSelecao.Exercicio02();
+            //exerciciosSelecao.Exercicio03();
+            exerciciosSelecao.Exercicio04();
 
 
         }
