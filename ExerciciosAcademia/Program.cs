@@ -27,7 +27,8 @@ namespace ExerciciosAcademia
             //exerciciosSelecao.Exercicio01();
             //exerciciosSelecao.Exercicio02();
             //exerciciosSelecao.Exercicio03();
-            exerciciosSelecao.Exercicio04();
+            //exerciciosSelecao.Exercicio04();
+            exerciciosSelecao.Exercicio08();
 
 
         }

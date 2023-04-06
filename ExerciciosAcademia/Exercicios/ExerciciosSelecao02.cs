@@ -175,6 +175,37 @@ namespace ExerciciosAcademia.Exercicios
              * Caso o total de vendas seja mais que R$ 1000,00, adicionar ao seu salário final 7% do total de vendas.
              * E por fim, se o total de vendas seja maior que R$ 5000,00, adicionar ao seu salário final 10% do total de vendas. 
              * **/
+            Console.WriteLine("Exercicio 08 - Exercicios Seleção");
+
+            Console.WriteLine("Digite o código:");
+            int codigo = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o nome:");
+            string nome  = Console.ReadLine();
+
+            Console.WriteLine("Digite o salário base:");
+            double salarioBase = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe o total de vendas do funcionário:");
+            double totalDeVendasDoFuncionario = double.Parse(Console.ReadLine());
+
+            double salarioFinal = salarioBase;
+
+            if(totalDeVendasDoFuncionario > 500 && totalDeVendasDoFuncionario <= 1000)
+            {
+                salarioFinal = salarioFinal + (totalDeVendasDoFuncionario * 0.05);
+            }
+            else if (totalDeVendasDoFuncionario > 1000 && totalDeVendasDoFuncionario <= 5000)
+            {
+                salarioFinal = salarioFinal + (totalDeVendasDoFuncionario * 0.07);
+            } 
+            else if (totalDeVendasDoFuncionario > 5000)
+            {
+                salarioFinal = salarioFinal + (totalDeVendasDoFuncionario * 0.10);
+            }
+
+            Console.WriteLine($"O vendedor {nome} teve um salário final de R$ {salarioFinal:f2}");
+
         }
 
         public void Exercicio09()
