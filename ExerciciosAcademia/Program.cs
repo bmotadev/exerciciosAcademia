@@ -20,9 +20,15 @@ namespace ExerciciosAcademia
             //exercicios.Exercicio10();
             //exercicios.Exercicio11();
             //exercicios.Exercicio12();
-            exercicios.Exercicio13();
+            //exercicios.Exercicio13();
 
-            
+            ExerciciosSelecao02 exerciciosSelecao = new ExerciciosSelecao02();
+
+            //exerciciosSelecao.Exercicio01();
+            exerciciosSelecao.Exercicio02();
+
+
+
         }
     }
 }
