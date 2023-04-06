@@ -151,6 +151,20 @@ namespace ExerciciosAcademia.Exercicios
              * 7 - Faça um programa em C# e no VS para receber uma frase qualquer e uma palavra de pesquisa.
              * O programa deve avaliar se a palavra aparece na frase, informando o usuário via mensagem, como por exemplo, A palavra encontra-se na frase   ou A palavra não se encontra na frase.
              * **/
+
+            Console.WriteLine("Digite uma frase: ");
+            string frase = Console.ReadLine();
+
+            Console.WriteLine("Digite uma palavra: ");
+            string palavra = Console.ReadLine();
+
+            if(frase.Contains(palavra))
+            {
+                Console.WriteLine($"A palavra {palavra} está dentro da frase {frase}");
+            } else
+            {
+                Console.WriteLine("Não possui a palavra");
+            }
         }
 
         public void Exercicio08()
@@ -181,6 +195,103 @@ namespace ExerciciosAcademia.Exercicios
             /*
              * 10 - Faça um programa no VS que receba dados de dois atletas (nome, idade e altura).
              * O programa deve mostrar os dados do atleta mais novo e mais alto.
+             * **/
+        }
+
+        public void Exercicio11()
+        {
+            /*
+             * 11 - Faça um programa no VS que receba uma hora, dividida em 2 variáveis (uma para hora e outra para minutos).
+             * O programa deve exibir se a hora digitada está ou não válida. 
+             * Lembre que usaremos o padrão de hora com 24h, de 0 a 23.
+             * **/
+        }
+
+        public void Exercicio12()
+        {
+            /*
+             * 12 - Elabore um programa em VS que leia as variáveis "codigo" e "numeroHoras", respectivamente código e número de horas trabalhadas de um operário. 
+             * Na sequência, calcule o salário sabendo-se que ele ganha R$ 10,00 por hora. 
+             * Quando o número de horas exceder a 50 calcule o excesso de pagamento armazenando-o na variável "extra", caso contrário zerar tal variável. A hora excedente de trabalho vale R$ 20,00. 
+             * No final do processamento, exibir o salário total e o salário excedente do operário.
+             * **/
+        }
+
+        public void Exercicio13()
+        {
+            /*
+             * 13 - Tendo como dado de entrada a altura (h) de uma pessoa, construa um programa no VS que calcule seu peso ideal, utilizando as seguintes fórmulas:
+             * Para homens: (72.7 * h) - 58
+             * Para mulheres: (62.1 * h) - 44.7
+             * **/
+        }
+
+        public void Exercicio14()
+        {
+            /*
+             * 14 - Faça um programa que peça o tamanho de um arquivo para download (em MB) e a velocidade de um link de Internet (em Mbps). 
+             * Em seguida, calcule e informe o tempo aproximado de download do arquivo usando este link (em minutos).
+             * **/
+        }
+
+        public void Exercicio15()
+        {
+            /*
+             * 15 - Faça um programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. 
+             * Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00.
+             * Informe ao usuário a quantidades de latas de tinta a serem compradas e o preço total.
+             * **/
+        }
+
+        public void Exercicio16()
+        {
+            /*
+             * 16 - Escreva um algoritmo que leia o placar de um jogo da primeira fase da copa do Brasil. 
+             * Caso o time de fora tenha ganho o jogo por mais de 2 gols de diferença, mostre na tela uma mensagem indicando que o time de fora já se classificou para a próxima fase. 
+             * Caso contrário, mostre uma mensagem indicando que os dois times irão se enfrentar novamente em um novo jogo.
+             * ex: time da casa 4 x 3 time de fora, mostra "Os dois times se enfrentarão em um novo jogo"
+             * ex2: time da casa 1 x 3 time de fora, mostra "O time de fora já se classificou"
+             * plus: caso ocorra um segundo jogo, leia o placar desse novo jogo e então diga quem passou de fase.
+             * **/
+        }
+
+        public void Exercicio17()
+        {
+            /*
+             * 17 - Faça um algoritmo que leia o tamanho dos lados de um triangulo (lado a, b e c), e então diga se esses lados podem ou não formar um triangulo. 
+             * Para que os lados formem um triângulo, todos os lados devem ser menores ou iguais a soma dos outros dois lados. 
+             * Caso os lados formem um triangulo, diga se o mesmo é equilátero (todos os lados iguais), isoceles (somente 2 lados são iguais) ou escaleno (os 3 lados são diferentes).
+             * **/
+        }
+
+        public void Exercicio18()
+        {
+            /*
+             * 18 - Escreva um algoritmo que leia 3 valores pelo teclado e então informe qual o maior deles.
+             * **/
+        }
+
+        public void Exercicio19()
+        {
+            /*
+             * 19 - Ajuste o exercício 18 de maneira que mostre os valores informados em ordem crescente.
+             * **/
+        }
+
+        public void Exercicio20()
+        {
+            /*
+             * 20 - Escreva um algoritmo para o jogo de adivinhação do número secreto. 
+             * O jogador tem 3 chances e recebe dicas do tipo “é maior” ou “é menor”. 
+             * plus: você pode gerar o número de forma randomica (função random c#).
+             * **/
+        }
+
+        public void Exercicio21()
+        {
+            /*
+             * 21 - Crie um programa que permita que o usuário selecione uma unidade de medida de entrada (metros, centímetros, polegadas ou pés) e uma unidade de medida de saída usando um menu com o comando switch case. 
+             * O programa deve, em seguida, pedir ao usuário um valor de entrada e converter esse valor para a unidade de saída selecionada.
              * **/
         }
     }
