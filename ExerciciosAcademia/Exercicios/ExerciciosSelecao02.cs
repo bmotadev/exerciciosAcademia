@@ -135,6 +135,26 @@ namespace ExerciciosAcademia.Exercicios
             Console.WriteLine("Informe a segunda nota:");
             double notaDois = double.Parse(Console.ReadLine());
 
+            double media = (notaUm + notaDois) / 2;
+
+            double mediaFinal = 0;
+
+            if(media < 7.0)
+            {
+                Console.WriteLine("Informe a nota do exame:");
+                double notaDoExame = double.Parse(Console.ReadLine());
+
+                mediaFinal = (media + notaDoExame) / 2;
+            }
+
+            if(mediaFinal >= 5.0)
+            {
+                Console.WriteLine("Aprovado");
+            } else
+            {
+                Console.WriteLine("Reprovado");
+            }
+
 
 
         }
