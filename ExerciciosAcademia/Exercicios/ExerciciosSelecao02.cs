@@ -127,6 +127,16 @@ namespace ExerciciosAcademia.Exercicios
              * Caso a média seja inferior a 7,0, o programa deve ler a nota do exame e calcular a média final,é a média entre a nota do exame e a média das 2 notas. 
              * Se esta média final for maior ou igual a 5,0, o programa deve escrever “Aprovado”, caso contrário deve escrever “Reprovado”.
              * **/
+            Console.WriteLine("Exercicio 05 - Exercicios Seleção");
+
+            Console.WriteLine("Informe a primeira nota:");
+            double notaUm = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe a segunda nota:");
+            double notaDois = double.Parse(Console.ReadLine());
+
+
+
         }
 
         public void Exercicio06() 
@@ -219,6 +229,37 @@ namespace ExerciciosAcademia.Exercicios
              * Além disso, o programa deve fazer a média dos 3 valores de glicemia coletados. E se a média for menor que 80, avisá-lo que é preciso diminuir 2 unidades de insulina. 
              * Se a média for maior que150, avisá-lo que será necessário adicionar 2 unidades de insulina.
              * **/
+            Console.WriteLine("Exercicio 09 - Exercicios Seleção");
+
+            Console.WriteLine("Informe a primeira medição:");
+            double primeiraMedicao = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe a segunda medição");
+            double segundaMedicao = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe a terceira medição");
+            double terceiraMedicao = double.Parse(Console.ReadLine());
+
+            if(primeiraMedicao < 65 || segundaMedicao < 65 || terceiraMedicao < 65 )
+            {
+                Console.WriteLine("Risco de Hipoglicemia");
+            }
+            if(primeiraMedicao > 250 || segundaMedicao > 250 || terceiraMedicao > 250)
+            {
+                Console.WriteLine("Risco de Hiperglicemia");
+            }
+
+            double media = (primeiraMedicao + segundaMedicao + terceiraMedicao) / 3;
+
+            if(media < 80)
+            {
+                Console.WriteLine("Diminuir 2 unidades de insulina");
+            }
+            if(media > 150)
+            {
+                Console.WriteLine("Adicionar 2 unidades de insulina");
+            }
+
         }
 
         public void Exercicio10()
