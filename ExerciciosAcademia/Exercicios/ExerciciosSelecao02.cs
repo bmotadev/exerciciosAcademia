@@ -175,7 +175,41 @@ namespace ExerciciosAcademia.Exercicios
              * **/
             Console.WriteLine("Exercicio 06 - Exercicios Seleção");
 
+            Console.WriteLine("Informe seu nome");
+            string nome = Console.ReadLine().ToUpper();
 
+            Console.WriteLine("Informe sua altura em metros:");
+            double altura = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe seu peso:");
+            double peso = double.Parse(Console.ReadLine());
+
+            double imc = peso / (altura * altura);
+
+            string situacao;
+
+            if(imc < 18)
+            {
+                situacao = "Baixo peso";
+            }
+            else if ( imc > 18 && imc < 25)
+            {
+                situacao = "Peso normal";
+            }
+            else if ( imc > 25 && imc < 30)
+            {
+                situacao = "Sobrepeso";
+            }
+            else if ( imc > 30 && imc < 35)
+            {
+                situacao = "Obesidade";
+            }
+            else
+            {
+                situacao = "Obesidade Grau Sério";
+            }
+
+            Console.WriteLine($"{nome} seu imc é de : {imc:f2}. E você está com: {situacao}");
 
         }
 
