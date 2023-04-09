@@ -328,6 +328,45 @@ namespace ExerciciosAcademia.Exercicios
              * **/
             Console.WriteLine("Exercicio 10 - Exercicios Seleção");
 
+            //int idadeAtletaUm = 0, idadeAtletaDois = 0;
+
+            Console.WriteLine("Escreva o nome do atleta 1:");
+            string nomeAtletaUm = Console.ReadLine();
+
+            Console.WriteLine("Escreva a idade do atleta 1:");
+            int idadeAtletaUm = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Escreva a altura do atleta 1:");
+            double alturaAtletaUm = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Escreva o nome do atleta 2:");
+            string nomeAtletaDois = Console.ReadLine();
+
+            Console.WriteLine("Escreva a idade do atleta 2:");
+            int idadeAtletaDois = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Escreva a altura do atleta 2:");
+            double alturaAtletaDois = double.Parse(Console.ReadLine());
+
+            if (idadeAtletaUm < idadeAtletaDois)
+            {
+                Console.WriteLine($"O atleta mais novo é o {nomeAtletaUm}");
+            }
+            else
+            {
+                Console.WriteLine($"O atleta mais novo é o {nomeAtletaDois}");
+            }
+
+            if(alturaAtletaUm > alturaAtletaDois)
+            {
+                Console.WriteLine($"O atleta mais alto é o {nomeAtletaUm}");
+            } else
+            {
+                Console.WriteLine($"O atleta mais alto é o {nomeAtletaDois}");
+            }
+
+
+
         }
 
         public void Exercicio11()
