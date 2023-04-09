@@ -314,6 +314,7 @@ namespace ExerciciosAcademia.Exercicios
              * Quando o número de horas exceder a 50 calcule o excesso de pagamento armazenando-o na variável "extra", caso contrário zerar tal variável. A hora excedente de trabalho vale R$ 20,00. 
              * No final do processamento, exibir o salário total e o salário excedente do operário.
              * **/
+            Console.WriteLine("Exercicio 12 - Exercicios Seleção");
         }
 
         public void Exercicio13()
