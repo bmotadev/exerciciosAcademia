@@ -303,6 +303,7 @@ namespace ExerciciosAcademia.Exercicios
              * O programa deve exibir se a hora digitada está ou não válida. 
              * Lembre que usaremos o padrão de hora com 24h, de 0 a 23.
              * **/
+            Console.WriteLine("Exercicio 11 - Exercicios Seleção");
         }
 
         public void Exercicio12()
