@@ -324,6 +324,7 @@ namespace ExerciciosAcademia.Exercicios
              * Para homens: (72.7 * h) - 58
              * Para mulheres: (62.1 * h) - 44.7
              * **/
+            Console.WriteLine("Exercicio 13 - Exercicios Seleção");
         }
 
         public void Exercicio14()
@@ -332,6 +333,7 @@ namespace ExerciciosAcademia.Exercicios
              * 14 - Faça um programa que peça o tamanho de um arquivo para download (em MB) e a velocidade de um link de Internet (em Mbps). 
              * Em seguida, calcule e informe o tempo aproximado de download do arquivo usando este link (em minutos).
              * **/
+            Console.WriteLine("Exercicio 12 - Exercicios Seleção");
         }
 
         public void Exercicio15()
@@ -341,6 +343,7 @@ namespace ExerciciosAcademia.Exercicios
              * Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00.
              * Informe ao usuário a quantidades de latas de tinta a serem compradas e o preço total.
              * **/
+            Console.WriteLine("Exercicio 12 - Exercicios Seleção");
         }
 
         public void Exercicio16()
@@ -353,6 +356,7 @@ namespace ExerciciosAcademia.Exercicios
              * ex2: time da casa 1 x 3 time de fora, mostra "O time de fora já se classificou"
              * plus: caso ocorra um segundo jogo, leia o placar desse novo jogo e então diga quem passou de fase.
              * **/
+            Console.WriteLine("Exercicio 12 - Exercicios Seleção");
         }
 
         public void Exercicio17()
@@ -362,6 +366,7 @@ namespace ExerciciosAcademia.Exercicios
              * Para que os lados formem um triângulo, todos os lados devem ser menores ou iguais a soma dos outros dois lados. 
              * Caso os lados formem um triangulo, diga se o mesmo é equilátero (todos os lados iguais), isoceles (somente 2 lados são iguais) ou escaleno (os 3 lados são diferentes).
              * **/
+            Console.WriteLine("Exercicio 12 - Exercicios Seleção");
         }
 
         public void Exercicio18()
@@ -376,6 +381,7 @@ namespace ExerciciosAcademia.Exercicios
             /*
              * 19 - Ajuste o exercício 18 de maneira que mostre os valores informados em ordem crescente.
              * **/
+            Console.WriteLine("Exercicio 12 - Exercicios Seleção");
         }
 
         public void Exercicio20()
@@ -385,6 +391,7 @@ namespace ExerciciosAcademia.Exercicios
              * O jogador tem 3 chances e recebe dicas do tipo “é maior” ou “é menor”. 
              * plus: você pode gerar o número de forma randomica (função random c#).
              * **/
+            Console.WriteLine("Exercicio 12 - Exercicios Seleção");
         }
 
         public void Exercicio21()
@@ -393,6 +400,7 @@ namespace ExerciciosAcademia.Exercicios
              * 21 - Crie um programa que permita que o usuário selecione uma unidade de medida de entrada (metros, centímetros, polegadas ou pés) e uma unidade de medida de saída usando um menu com o comando switch case. 
              * O programa deve, em seguida, pedir ao usuário um valor de entrada e converter esse valor para a unidade de saída selecionada.
              * **/
+            Console.WriteLine("Exercicio 12 - Exercicios Seleção");
         }
     }
 }
