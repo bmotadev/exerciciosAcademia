@@ -356,7 +356,7 @@ namespace ExerciciosAcademia.Exercicios
              * ex2: time da casa 1 x 3 time de fora, mostra "O time de fora já se classificou"
              * plus: caso ocorra um segundo jogo, leia o placar desse novo jogo e então diga quem passou de fase.
              * **/
-            Console.WriteLine("Exercicio 12 - Exercicios Seleção");
+            Console.WriteLine("Exercicio 16 - Exercicios Seleção");
         }
 
         public void Exercicio17()
