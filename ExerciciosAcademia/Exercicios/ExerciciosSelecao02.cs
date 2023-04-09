@@ -173,6 +173,10 @@ namespace ExerciciosAcademia.Exercicios
              * maior que 30 e menor que 35 -> obesidade
              * maior que 35                -> obesidade grau sério
              * **/
+            Console.WriteLine("Exercicio 06 - Exercicios Seleção");
+
+
+
         }
 
         public void Exercicio07()
@@ -288,6 +292,8 @@ namespace ExerciciosAcademia.Exercicios
              * 10 - Faça um programa no VS que receba dados de dois atletas (nome, idade e altura).
              * O programa deve mostrar os dados do atleta mais novo e mais alto.
              * **/
+            Console.WriteLine("Exercicio 10 - Exercicios Seleção");
+
         }
 
         public void Exercicio11()
