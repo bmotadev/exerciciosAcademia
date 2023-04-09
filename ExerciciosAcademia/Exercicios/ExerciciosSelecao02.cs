@@ -343,7 +343,7 @@ namespace ExerciciosAcademia.Exercicios
              * Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00.
              * Informe ao usuário a quantidades de latas de tinta a serem compradas e o preço total.
              * **/
-            Console.WriteLine("Exercicio 12 - Exercicios Seleção");
+            Console.WriteLine("Exercicio 15 - Exercicios Seleção");
         }
 
         public void Exercicio16()
