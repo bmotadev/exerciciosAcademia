@@ -374,6 +374,7 @@ namespace ExerciciosAcademia.Exercicios
             /*
              * 18 - Escreva um algoritmo que leia 3 valores pelo teclado e então informe qual o maior deles.
              * **/
+            Console.WriteLine("Exercicio 18 - Exercicios Seleção");
         }
 
         public void Exercicio19()
@@ -381,7 +382,7 @@ namespace ExerciciosAcademia.Exercicios
             /*
              * 19 - Ajuste o exercício 18 de maneira que mostre os valores informados em ordem crescente.
              * **/
-            Console.WriteLine("Exercicio 12 - Exercicios Seleção");
+            Console.WriteLine("Exercicio 19 - Exercicios Seleção");
         }
 
         public void Exercicio20()
@@ -391,7 +392,7 @@ namespace ExerciciosAcademia.Exercicios
              * O jogador tem 3 chances e recebe dicas do tipo “é maior” ou “é menor”. 
              * plus: você pode gerar o número de forma randomica (função random c#).
              * **/
-            Console.WriteLine("Exercicio 12 - Exercicios Seleção");
+            Console.WriteLine("Exercicio 20 - Exercicios Seleção");
         }
 
         public void Exercicio21()
@@ -400,7 +401,7 @@ namespace ExerciciosAcademia.Exercicios
              * 21 - Crie um programa que permita que o usuário selecione uma unidade de medida de entrada (metros, centímetros, polegadas ou pés) e uma unidade de medida de saída usando um menu com o comando switch case. 
              * O programa deve, em seguida, pedir ao usuário um valor de entrada e converter esse valor para a unidade de saída selecionada.
              * **/
-            Console.WriteLine("Exercicio 12 - Exercicios Seleção");
+            Console.WriteLine("Exercicio 21 - Exercicios Seleção");
         }
     }
 }
