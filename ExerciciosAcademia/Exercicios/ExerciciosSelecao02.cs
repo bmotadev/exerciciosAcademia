@@ -366,7 +366,7 @@ namespace ExerciciosAcademia.Exercicios
              * Para que os lados formem um triângulo, todos os lados devem ser menores ou iguais a soma dos outros dois lados. 
              * Caso os lados formem um triangulo, diga se o mesmo é equilátero (todos os lados iguais), isoceles (somente 2 lados são iguais) ou escaleno (os 3 lados são diferentes).
              * **/
-            Console.WriteLine("Exercicio 12 - Exercicios Seleção");
+            Console.WriteLine("Exercicio 17 - Exercicios Seleção");
         }
 
         public void Exercicio18()
