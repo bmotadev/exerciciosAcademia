@@ -123,6 +123,29 @@ namespace ExerciciosAcademia.Exercicios
              * 6 - Escreva um algoritmo que leia o número de alunos de uma turma e em seguida leia a quantidade de avaliações aplicadas para aquela turma. Por fim, leia as notas das avaliações de cada aluno e mostre sua nota final (média das notas das avaliações).
              * **/
             Console.WriteLine("Exercicio 06 - Exercicio de Repetição");
+
+
+            // ler o numero de alunos
+            Console.WriteLine("Informe o número de alunos");
+            int quantidadeAlunos = int.Parse(Console.ReadLine());
+
+            // ler a quantidade de avaliacoes
+            Console.WriteLine("Informe a quantidade de avaliações aplicadas:");
+            int quantidadeAvaliacoes = int.Parse(Console.ReadLine());
+
+            double totalNotas = 0;
+
+            // ler as notas das avaliações de cada aluno
+            for(int i = 1; i >= quantidadeAlunos; i++)
+            {
+                Console.WriteLine($"Informe a nota do {i}º aluno:");
+                totalNotas += double.Parse(Console.ReadLine());
+            }
+
+            // mostrar nota final
+            double mediaAvaliacoes = totalNotas / quantidadeAvaliacoes;
+
+            Console.WriteLine($"A média das notas das avaliações é de: {mediaAvaliacoes:f2}");
         }
 
         public void Exercicio07()
