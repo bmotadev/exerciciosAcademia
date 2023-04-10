@@ -154,6 +154,24 @@ namespace ExerciciosAcademia.Exercicios
              * 7 - Escreva um programa em C# leia 20 números e que conte a quantidade de números pares e ímpares digitados por um usuário. Apresente o resultado.
              * **/
             Console.WriteLine("Exercicio 07 - Exercicio de Repetição");
+
+            int numerosPares = 0, numerosImpares = 0;
+
+            for(int i = 1; i <= 20; i++)
+            {
+                Console.WriteLine($"Digite o {i}º número:");
+                int numero = int.Parse(Console.ReadLine());
+
+                if(numero % 2 == 0 )
+                {
+                    numerosPares++;
+                } else
+                {
+                    numerosImpares++;
+                }
+            }
+
+            Console.WriteLine($"Foram digitados {numerosPares} numeros pares. E {numerosImpares} numeros impares");
         }
     }
 }
