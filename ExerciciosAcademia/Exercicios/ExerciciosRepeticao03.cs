@@ -77,9 +77,24 @@ namespace ExerciciosAcademia.Exercicios
         public void Exercicio04()
         {
             /*
-             * 4 - Escreva um algoritmo que leia dois valores pelo teclado, x e y, e em seguida calcule a potência de xelevado na y sem utilizar a função pow.
+             * 4 - Escreva um algoritmo que leia dois valores pelo teclado, x e y, e em seguida calcule a potência de x elevado na y sem utilizar a função pow.
              * **/
             Console.WriteLine("Exercicio 04 - Exercicio de Repetição");
+
+            Console.WriteLine("Informe o primeiro valor:");
+            int primeiroValor = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe o segundo valor:");
+            int segundoValor = int.Parse(Console.ReadLine());
+
+            int potencia = 1;
+
+            for(int i = 1; i <= segundoValor; i++)
+            {
+                potencia *= primeiroValor;
+            }
+
+            Console.WriteLine($"A potência de {primeiroValor} elevado a {segundoValor} é: {potencia}");
         }
 
         public void Exercicio05()
