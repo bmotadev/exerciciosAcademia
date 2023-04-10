@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,22 @@ namespace ExerciciosAcademia.Exercicios
             /*
              * 1 - Escreva um algoritmo para ler um número n, e em seguida ler pelo teclado a idade de n pessoas e calcular a média das idades.
              * **/
+            Console.WriteLine("Digite um numero:");
+            int valorN = int.Parse(Console.ReadLine());
+
+            int totalIdade = 0;
+
+            for (int i = 1; i <= valorN; i++)
+            {
+                Console.WriteLine("Digite sua idade");
+                int idade = int.Parse(Console.ReadLine());
+
+                totalIdade += idade;
+            }
+
+            double mediaIdades = totalIdade / valorN;
+
+            Console.WriteLine($"A media de idades é de: {mediaIdades:f2}");
         }
 
         public void Exercicio02()
@@ -20,6 +37,10 @@ namespace ExerciciosAcademia.Exercicios
             /*
              * 2 - Faça um algoritmo que leia 10 números pelo teclado, e que no final mostre o maior deles. Não usar vetor.
              * **/
+            Console.WriteLine("Exercicio 02 - Exercicio de Repetição");
+
+
+
         }
 
         public void Exercicio03()

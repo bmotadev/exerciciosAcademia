@@ -34,9 +34,12 @@ namespace ExerciciosAcademia
             //exerciciosSelecao.Exercicio08();
             //exerciciosSelecao.Exercicio09();
             //exerciciosSelecao.Exercicio10();
-            exerciciosSelecao.Exercicio15();
+            //exerciciosSelecao.Exercicio15();
 
 
+            ExerciciosRepeticao03 exerciciosRepeticao = new ExerciciosRepeticao03();
+
+            exerciciosRepeticao.Exercicio01();
         }
     }
 }
