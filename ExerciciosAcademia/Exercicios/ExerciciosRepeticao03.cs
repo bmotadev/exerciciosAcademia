@@ -39,6 +39,20 @@ namespace ExerciciosAcademia.Exercicios
              * **/
             Console.WriteLine("Exercicio 02 - Exercicio de Repetição");
 
+            int maiorNumero = 0;
+
+            for(int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine($"Digite o {i}º número:");
+                int numero = int.Parse(Console.ReadLine());
+
+                if(numero > maiorNumero)
+                {
+                    maiorNumero = numero;
+                }
+            }
+            Console.WriteLine($"O maior numero entre os digitados é o: {maiorNumero}");
+
 
 
         }
