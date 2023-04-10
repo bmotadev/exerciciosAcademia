@@ -62,6 +62,16 @@ namespace ExerciciosAcademia.Exercicios
             /*
              * 3 - Escreva um algoritmo que leia pelo teclado um valor e então calcule a tabuada de 1 a 10 de um númerox lido utilizando laços de repetição, e mostre na tela.
              * **/
+            Console.WriteLine("Exercicio 03 - Exercicio de Repetição");
+
+            Console.WriteLine("Informe o valor da tabuada que deseja:");
+            int valor = int.Parse(Console.ReadLine());
+
+            for(int i = 1;i <= 10;i++)
+            {
+                Console.WriteLine($"{i} x {valor} = {i*valor}");
+            }
+
         }
 
         public void Exercicio04()
@@ -69,6 +79,7 @@ namespace ExerciciosAcademia.Exercicios
             /*
              * 4 - Escreva um algoritmo que leia dois valores pelo teclado, x e y, e em seguida calcule a potência de xelevado na y sem utilizar a função pow.
              * **/
+            Console.WriteLine("Exercicio 04 - Exercicio de Repetição");
         }
 
         public void Exercicio05()
@@ -76,6 +87,7 @@ namespace ExerciciosAcademia.Exercicios
             /*
              * 5 - Escreva um algoritmo para calcular o fatorial de um número.
              * **/
+            Console.WriteLine("Exercicio 05 - Exercicio de Repetição");
         }
 
         public void Exercicio06()
@@ -83,6 +95,7 @@ namespace ExerciciosAcademia.Exercicios
             /*
              * 6 - Escreva um algoritmo que leia o número de alunos de uma turma e em seguida leia a quantidade de avaliações aplicadas para aquela turma. Por fim, leia as notas das avaliações de cada aluno e mostre sua nota final (média das notas das avaliações).
              * **/
+            Console.WriteLine("Exercicio 06 - Exercicio de Repetição");
         }
 
         public void Exercicio07()
@@ -90,6 +103,7 @@ namespace ExerciciosAcademia.Exercicios
             /*
              * 7 - Escreva um programa em C# leia 20 números e que conte a quantidade de números pares e ímpares digitados por um usuário. Apresente o resultado.
              * **/
+            Console.WriteLine("Exercicio 07 - Exercicio de Repetição");
         }
     }
 }
