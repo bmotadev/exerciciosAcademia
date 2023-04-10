@@ -33,7 +33,8 @@ namespace ExerciciosAcademia
             //exerciciosSelecao.Exercicio07();
             //exerciciosSelecao.Exercicio08();
             //exerciciosSelecao.Exercicio09();
-            exerciciosSelecao.Exercicio10();
+            //exerciciosSelecao.Exercicio10();
+            exerciciosSelecao.Exercicio15();
 
 
         }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Channels;
 using System.Threading.Tasks;
 
 namespace ExerciciosAcademia.Exercicios
@@ -377,6 +378,11 @@ namespace ExerciciosAcademia.Exercicios
              * Lembre que usaremos o padrão de hora com 24h, de 0 a 23.
              * **/
             Console.WriteLine("Exercicio 11 - Exercicios Seleção");
+
+            Console.WriteLine("Digite um horário:");
+            string[] horario = Console.ReadLine().Split(':');
+
+            
         }
 
         public void Exercicio12()
@@ -417,6 +423,25 @@ namespace ExerciciosAcademia.Exercicios
              * Informe ao usuário a quantidades de latas de tinta a serem compradas e o preço total.
              * **/
             Console.WriteLine("Exercicio 15 - Exercicios Seleção");
+
+            double area, qtdTinta, valorTotal, qtdLatas, qtdLatasCeiling = 0, qtdLatasFloor;
+
+            Console.WriteLine("Digite a área a ser pintadas:");
+            area = double.Parse(Console.ReadLine());
+
+            qtdTinta = area / 3;
+            qtdLatas = qtdTinta / 18;
+
+            qtdLatasFloor = Math.Floor(qtdLatas);
+            qtdLatasCeiling = Math.Ceiling(qtdLatasCeiling);
+
+            Console.WriteLine($"A área de {area} precisa de {qtdTinta} litros de tinta");
+            Console.WriteLine($"Será necessário comprar {qtdLatas} latas de tinta");
+            Console.WriteLine($"Será necessário comprar {qtdLatasCeiling} latas de tinta");
+            Console.WriteLine($"Será necessário comprar {qtdLatasFloor} latas de tinta");
+            valorTotal = qtdLatas * 80;
+
+            Console.WriteLine($"Custará R$ {valorTotal}");
         }
 
         public void Exercicio16()
