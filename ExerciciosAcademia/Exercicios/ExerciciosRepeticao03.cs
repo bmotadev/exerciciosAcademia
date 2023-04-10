@@ -103,6 +103,18 @@ namespace ExerciciosAcademia.Exercicios
              * 5 - Escreva um algoritmo para calcular o fatorial de um número.
              * **/
             Console.WriteLine("Exercicio 05 - Exercicio de Repetição");
+
+            Console.WriteLine("Digite um valor para calcular seu fatorial:");
+            int numero = int.Parse(Console.ReadLine());
+
+            int fatorial = 1;
+
+            for(int i = numero; i > 1; i--)
+            {
+                fatorial *= i; 
+            }
+
+            Console.WriteLine($"O fatorial de {numero} é: {fatorial}");
         }
 
         public void Exercicio06()
