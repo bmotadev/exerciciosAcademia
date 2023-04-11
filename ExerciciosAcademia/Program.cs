@@ -34,6 +34,7 @@ namespace ExerciciosAcademia
             //exerciciosSelecao.Exercicio08();
             //exerciciosSelecao.Exercicio09();
             //exerciciosSelecao.Exercicio10();
+            exerciciosSelecao.Exercicio11();
             //exerciciosSelecao.Exercicio15();
 
 
@@ -44,7 +45,7 @@ namespace ExerciciosAcademia
             //exerciciosRepeticao.Exercicio03();
             //exerciciosRepeticao.Exercicio04();
             //exerciciosRepeticao.Exercicio05();
-            exerciciosRepeticao.Exercicio06();
+            //exerciciosRepeticao.Exercicio06();
             //exerciciosRepeticao.Exercicio07();
         }
     }

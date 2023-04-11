@@ -381,6 +381,25 @@ namespace ExerciciosAcademia.Exercicios
 
             Console.WriteLine("Digite um horário:");
             string[] horario = Console.ReadLine().Split(':');
+            int hora = int.Parse(horario[0]);
+            int minutos = int.Parse(horario[1]);
+
+
+            if(hora >= 0 && hora <= 23)
+            {
+                if(minutos >= 0 && minutos <= 59)
+                {
+                    Console.WriteLine("Hora digitada é válida");
+                }
+                else
+                {
+                    Console.WriteLine("Hora digitada não é valida");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Hora digitada não é valida");
+            }
 
             
         }
