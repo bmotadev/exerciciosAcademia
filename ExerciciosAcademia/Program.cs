@@ -44,8 +44,8 @@ namespace ExerciciosAcademia
             //exerciciosRepeticao.Exercicio03();
             //exerciciosRepeticao.Exercicio04();
             //exerciciosRepeticao.Exercicio05();
-            //exerciciosRepeticao.Exercicio06();
-            exerciciosRepeticao.Exercicio07();
+            exerciciosRepeticao.Exercicio06();
+            //exerciciosRepeticao.Exercicio07();
         }
     }
 }

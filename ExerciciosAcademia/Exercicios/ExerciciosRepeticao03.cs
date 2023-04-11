@@ -133,19 +133,25 @@ namespace ExerciciosAcademia.Exercicios
             Console.WriteLine("Informe a quantidade de avaliações aplicadas:");
             int quantidadeAvaliacoes = int.Parse(Console.ReadLine());
 
-            double totalNotas = 0;
+            double totalNotas;
 
             // ler as notas das avaliações de cada aluno
-            for(int i = 1; i >= quantidadeAlunos; i++)
+            for(int i = 1; i <= quantidadeAlunos; i++)
             {
-                Console.WriteLine($"Informe a nota do {i}º aluno:");
-                totalNotas += double.Parse(Console.ReadLine());
+                totalNotas = 0;
+                for (int j = 1; j <= quantidadeAvaliacoes; j++)
+                {
+                    Console.WriteLine($"Informe a nota da {j}º avaliação do {i}º aluno:");
+                    double notas = double.Parse(Console.ReadLine());
+                    totalNotas += notas;
+                }
+
+                // mostrar nota final
+                double mediaAvaliacoes = totalNotas / quantidadeAvaliacoes;
+                Console.WriteLine($"A média das notas do {i}º aluno é de: {mediaAvaliacoes:f2}");
             }
 
-            // mostrar nota final
-            double mediaAvaliacoes = totalNotas / quantidadeAvaliacoes;
-
-            Console.WriteLine($"A média das notas das avaliações é de: {mediaAvaliacoes:f2}");
+            
         }
 
         public void Exercicio07()
