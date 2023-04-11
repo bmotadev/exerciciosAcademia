@@ -413,6 +413,20 @@ namespace ExerciciosAcademia.Exercicios
              * No final do processamento, exibir o salário total e o salário excedente do operário.
              * **/
             Console.WriteLine("Exercicio 12 - Exercicios Seleção");
+
+            Console.WriteLine("Informe o código do operário:");
+            int codigoOperario = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe o número de horas trabalhas do operário:");
+            int horasTrabalhasOperario = int.Parse(Console.ReadLine());
+
+            if(horasTrabalhasOperario > 50)
+            {
+                double horaExtra = (horasTrabalhasOperario - 50) * 20;
+            } else
+            {
+
+            }
         }
 
         public void Exercicio13()
