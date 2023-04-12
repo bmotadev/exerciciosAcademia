@@ -47,6 +47,10 @@ namespace ExerciciosAcademia
             //exerciciosRepeticao.Exercicio05();
             //exerciciosRepeticao.Exercicio06();
             //exerciciosRepeticao.Exercicio07();
+
+            ExerciciosRepeticaoParteDois03 exerciciosRepeticaoParteDois = new ExerciciosRepeticaoParteDois03();
+
+            exerciciosRepeticaoParteDois.Exercicio01();
         }
     }
 }
