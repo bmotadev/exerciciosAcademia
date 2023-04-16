@@ -522,6 +522,7 @@ namespace ExerciciosAcademia.Exercicios
              * plus: caso ocorra um segundo jogo, leia o placar desse novo jogo e então diga quem passou de fase.
              * **/
             Console.WriteLine("Exercicio 16 - Exercicios Seleção");
+
         }
 
         public void Exercicio17()
@@ -532,6 +533,42 @@ namespace ExerciciosAcademia.Exercicios
              * Caso os lados formem um triangulo, diga se o mesmo é equilátero (todos os lados iguais), isoceles (somente 2 lados são iguais) ou escaleno (os 3 lados são diferentes).
              * **/
             Console.WriteLine("Exercicio 17 - Exercicios Seleção");
+
+            char[] lados = {'A','B','C'};
+
+            int[] valorDosLados = new int[3];
+
+            int valorA, valorB, valorC;
+            for(int i  = 0; i < lados.Length; i++)
+            {
+                Console.WriteLine($"Informe o lado {lados[i]}");
+                valorDosLados[i] = int.Parse(Console.ReadLine());
+            }
+
+            valorA = valorDosLados[0];
+            valorB = valorDosLados[1];
+            valorC = valorDosLados[2];
+
+
+            if( valorA <= (valorB + valorC) && valorB <= (valorC + valorA) && valorC <= (valorA + valorB)) 
+            {
+                Console.WriteLine("Pode formar um Triangulo");
+
+
+
+                if(valorA == valorB && valorC == valorA && valorB == valorC)
+                {
+                    Console.WriteLine("Equilátero");
+                } else if ( valorA == valorB || valorC == valorA || valorB == valorC)
+                {
+                    Console.WriteLine("Isoceles");
+                } else
+                {
+                    Console.WriteLine("EScaleno");
+                }
+            }
+
+
         }
 
         public void Exercicio18()

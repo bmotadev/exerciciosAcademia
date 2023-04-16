@@ -37,8 +37,9 @@ namespace ExerciciosAcademia
             //exerciciosSelecao.Exercicio11();
             //exerciciosSelecao.Exercicio12();
             //exerciciosSelecao.Exercicio13();
-            exerciciosSelecao.Exercicio14();
+            //exerciciosSelecao.Exercicio14();
             //exerciciosSelecao.Exercicio15();
+            exerciciosSelecao.Exercicio17();
 
 
             ExerciciosRepeticao03 exerciciosRepeticao = new ExerciciosRepeticao03();
