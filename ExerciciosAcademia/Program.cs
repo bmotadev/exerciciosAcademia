@@ -36,7 +36,8 @@ namespace ExerciciosAcademia
             //exerciciosSelecao.Exercicio10();
             //exerciciosSelecao.Exercicio11();
             //exerciciosSelecao.Exercicio12();
-            exerciciosSelecao.Exercicio13();
+            //exerciciosSelecao.Exercicio13();
+            exerciciosSelecao.Exercicio14();
             //exerciciosSelecao.Exercicio15();
 
 

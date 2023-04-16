@@ -470,6 +470,16 @@ namespace ExerciciosAcademia.Exercicios
              * Em seguida, calcule e informe o tempo aproximado de download do arquivo usando este link (em minutos).
              * **/
             Console.WriteLine("Exercicio 14 - Exercicios Seleção");
+
+            Console.WriteLine("Informe o tamanho do arquivo:");
+            double tamanhoDoArquivoMb = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe a velocidade do link da internet(em Mbps):");
+            double velocidadeLinkMbps = double.Parse(Console.ReadLine());
+
+            double tempoAproximadoDownloadMinutos = (tamanhoDoArquivoMb / (velocidadeLinkMbps / 8)) / 60;
+
+            Console.WriteLine($"Tempo aproximado de download é de: {tempoAproximadoDownloadMinutos}");
         }
 
         public void Exercicio15()
