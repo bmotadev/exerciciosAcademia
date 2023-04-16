@@ -443,6 +443,24 @@ namespace ExerciciosAcademia.Exercicios
              * Para mulheres: (62.1 * h) - 44.7
              * **/
             Console.WriteLine("Exercicio 13 - Exercicios Seleção");
+
+            Console.WriteLine("Informe altura:");
+            double altura = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Qual seu sexo? \nH - Homem \nM - Mulher");
+            char sexo = char.Parse(Console.ReadLine());
+            double calculoPesoIdeal;
+
+            if(sexo == 'H')
+            {
+                calculoPesoIdeal = (72.7 * altura) - 58;
+            } else
+            {
+                calculoPesoIdeal = (62 * altura) - 44.7;
+            }
+
+            Console.WriteLine($"Seu peso ideal é de: {calculoPesoIdeal:f2}");
+
         }
 
         public void Exercicio14()
