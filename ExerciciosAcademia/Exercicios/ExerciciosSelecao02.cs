@@ -420,13 +420,19 @@ namespace ExerciciosAcademia.Exercicios
             Console.WriteLine("Informe o número de horas trabalhas do operário:");
             int horasTrabalhasOperario = int.Parse(Console.ReadLine());
 
+            double horaExtra;
+            double salarioTotal;
             if(horasTrabalhasOperario > 50)
             {
-                double horaExtra = (horasTrabalhasOperario - 50) * 20;
+                horaExtra = (horasTrabalhasOperario - 50) * 20;
+                salarioTotal = (50 * 10) + horaExtra;
             } else
             {
-
+                horaExtra = 0;
+                salarioTotal = horasTrabalhasOperario * 10;
             }
+
+            Console.WriteLine($"O funcionário {codigoOperario} tem o salário total de R$ {salarioTotal:f2} com o excedente de R$ {horaExtra}");
         }
 
         public void Exercicio13()
