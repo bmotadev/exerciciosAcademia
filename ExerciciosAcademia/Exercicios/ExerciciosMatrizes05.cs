@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -200,6 +201,38 @@ namespace ExerciciosAcademia.Exercicios
              * 5) Leia duas matrizes 2x3 de números double. 
                     Imprima a soma destas duas matrizes.
              * **/
+
+            Console.WriteLine("Leia duas matrizes 2x3 de números double");
+
+            double[,] matrizA = new double[2, 3];
+            double[,] matrizB = new double[2, 3];
+
+            double somaDasMatrizes = 0.0;
+
+
+            // leitura da primeira matriz
+            for(int linha = 0; linha < matrizA.GetLength(0); linha++)
+            {
+                for(int coluna = 0; coluna < matrizB.GetLength(1); coluna++)
+                {
+                    Console.WriteLine($"Informe o valor da coluna {coluna+1} na linha {linha+1} da Matriz A");
+                    matrizA[linha,coluna] = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                    somaDasMatrizes += matrizA[linha, coluna];
+                }
+            }
+
+            // leitura da segunda matriz
+            for(int linha = 0; linha < matrizB.GetLength(0); linha++)
+            {
+                for(int coluna = 0; coluna < matrizB.GetLength(1); coluna++)
+                {
+                    Console.WriteLine($"Informe o valor da coluna {coluna + 1} na linha {linha + 1} da Matriz B");
+                    matrizB[linha, coluna] = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                    somaDasMatrizes += matrizB[linha, coluna];
+                }
+            }
+
+            Console.WriteLine($"A soma das matrizes é de: {somaDasMatrizes}");
         }
 
         public void Exercicio06()
