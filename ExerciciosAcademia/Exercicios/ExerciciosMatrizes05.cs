@@ -116,7 +116,7 @@ namespace ExerciciosAcademia.Exercicios
             {
                 for(int coluna = 0; coluna < matriz.GetLength(1); coluna++)
                 {
-                    Console.WriteLine($"Informe o valor da linha {linha} na coluna {coluna}:");
+                    Console.WriteLine($"Informe o valor da linha {linha+1} na coluna {coluna+1}:");
                     matriz[linha, coluna] = int.Parse(Console.ReadLine());
                 }
             }
@@ -144,6 +144,47 @@ namespace ExerciciosAcademia.Exercicios
                     -Quantos números são negativos
                     -Quantos zeros existem!
              * **/
+
+            int[,] matriz = new int[5,5];
+
+            int numerosPares = 0, numerosImpares = 0, numerosPositivos = 0, numerosNegativos = 0, numerosZeros = 0;
+
+            Console.WriteLine("Popule uma matriz 5x5");
+
+            for(int linha = 0; linha < matriz.GetLength(0); linha++)
+            {
+                for(int coluna = 0; coluna < matriz.GetLength(1); coluna++)
+                {
+                    Console.WriteLine($"Informe o valor da coluna {coluna+1} na linha {linha+1}");
+                }
+            }
+
+            for(int linha = 0; linha < matriz.GetLength(0); linha++)
+            {
+                for (int coluna = 0; coluna < matriz.GetLength(1); coluna ++)
+                {
+                    if(matriz[linha,coluna] / 2 == 0)
+                    {
+                        numerosPares++;
+                    }
+                    if (matriz[linha,coluna] / 2 == 1)
+                    {
+                        numerosImpares++;
+                    }
+                    if (matriz[linha,coluna] > 0)
+                    {
+                        numerosPositivos++;
+                    }
+                    if (matriz[linha,coluna] < 0)
+                    {
+                        numerosNegativos++;
+                    }
+                    if (matriz[linha,coluna] == 0)
+                    {
+                        numerosZeros++;
+                    }
+                }
+            }
         }
 
         public void Exercicio05()
