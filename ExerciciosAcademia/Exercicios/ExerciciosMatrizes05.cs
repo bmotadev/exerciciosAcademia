@@ -204,12 +204,9 @@ namespace ExerciciosAcademia.Exercicios
 
             Console.WriteLine("Leia duas matrizes 2x3 de números double");
 
-            double[,] matrizA = new double[2, 3];
-            double[,] matrizB = new double[2, 3];
-            double[,] matrizResultado = new double[2, 3];
-
-            double somaDasMatrizes = 0.0;
-            double somaTotalMatrizes = 0.0;
+            double[,] matrizA = new double[2, 2];
+            double[,] matrizB = new double[2, 2];
+            double[,] matrizResultado = new double[2, 2];
 
 
             // leitura da primeira matriz
@@ -219,7 +216,6 @@ namespace ExerciciosAcademia.Exercicios
                 {
                     Console.WriteLine($"Informe o valor da coluna {coluna+1} na linha {linha+1} da Matriz A");
                     matrizA[linha,coluna] = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                    somaDasMatrizes += matrizA[linha, coluna];
                 }
             }
 
@@ -230,7 +226,6 @@ namespace ExerciciosAcademia.Exercicios
                 {
                     Console.WriteLine($"Informe o valor da coluna {coluna + 1} na linha {linha + 1} da Matriz B");
                     matrizB[linha, coluna] = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                    somaDasMatrizes += matrizB[linha, coluna];
                 }
             }
 
@@ -239,14 +234,10 @@ namespace ExerciciosAcademia.Exercicios
             {
                 for(int coluna = 0; coluna < matrizA.GetLength(1); coluna++)
                 {
-                    somaTotalMatrizes += matrizA[linha, coluna] + matrizB[linha, coluna];
                     matrizResultado[linha,coluna] = matrizA[linha,coluna] + matrizB[linha, coluna];
-                    Console.WriteLine($"Soma da Matriz A : {matrizA[linha,coluna]} + Matriz B {matrizB[linha,coluna]} = {matrizResultado[linha,coluna]}");
+                    Console.WriteLine($"Soma da  Coluna {coluna+1} na linha {linha+1} da Matriz A com a Coluna {coluna+1} na Linha {linha+1} da Matriz B = {matrizResultado[linha,coluna]}");
                 }
             }
-
-            Console.WriteLine($"A soma das matrizes é de: {somaDasMatrizes}");
-            Console.WriteLine($"Soma total: {somaTotalMatrizes}");
         }
 
         public void Exercicio06()
