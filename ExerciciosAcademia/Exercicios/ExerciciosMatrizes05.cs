@@ -206,8 +206,10 @@ namespace ExerciciosAcademia.Exercicios
 
             double[,] matrizA = new double[2, 3];
             double[,] matrizB = new double[2, 3];
+            double[,] matrizResultado = new double[2, 3];
 
             double somaDasMatrizes = 0.0;
+            double somaTotalMatrizes = 0.0;
 
 
             // leitura da primeira matriz
@@ -232,7 +234,19 @@ namespace ExerciciosAcademia.Exercicios
                 }
             }
 
+
+            for(int linha = 0; linha < matrizA.GetLength(0); linha++)
+            {
+                for(int coluna = 0; coluna < matrizA.GetLength(1); coluna++)
+                {
+                    somaTotalMatrizes += matrizA[linha, coluna] + matrizB[linha, coluna];
+                    matrizResultado[linha,coluna] = matrizA[linha,coluna] + matrizB[linha, coluna];
+                    Console.WriteLine($"Soma da Matriz A : {matrizA[linha,coluna]} + Matriz B {matrizB[linha,coluna]} = {matrizResultado[linha,coluna]}");
+                }
+            }
+
             Console.WriteLine($"A soma das matrizes é de: {somaDasMatrizes}");
+            Console.WriteLine($"Soma total: {somaTotalMatrizes}");
         }
 
         public void Exercicio06()
@@ -269,6 +283,7 @@ namespace ExerciciosAcademia.Exercicios
             /*
              * 7) Leia duas matrizes A e B com 3x3 elementos. Construir uma matriz C, onde cada elemento de C é a subtração do elemento correspondente de A com B.
              * **/
+            int[,] matrizA = new int[4, 4];
         }
 
         public void Exercicio08()
