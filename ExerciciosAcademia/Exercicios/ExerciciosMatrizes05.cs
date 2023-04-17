@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace ExerciciosAcademia.Exercicios
 {
@@ -50,11 +52,11 @@ namespace ExerciciosAcademia.Exercicios
 	                         Coluna 2: 36
              * **/
 
-            int[,] matriz = new int[2, 3];
+            int[,] matriz = new int[3, 3];
             Console.WriteLine(matriz.GetLength(0)); //mostra qtas linhas ha
             Console.WriteLine(matriz.GetLength(1)); //mostra qtas colunas ha
 
-            Console.WriteLine("Preencha a matriz 2x3!!");
+            Console.WriteLine("Preencha a matriz 3x3!!");
 
             for (int linha = 0; linha < matriz.GetLength(0); linha++)
             {
@@ -105,6 +107,31 @@ namespace ExerciciosAcademia.Exercicios
             /*
              * 3) Popule uma matriz 4x4 e mostre os elementos da Diagonal Principal!
              * **/
+
+            int[,] matriz = new int[4, 4];
+
+            Console.WriteLine("Preencha uma matriz 4x4");
+
+            for(int linha = 0; linha < matriz.GetLength(0); linha++)
+            {
+                for(int coluna = 0; coluna < matriz.GetLength(1); coluna++)
+                {
+                    Console.WriteLine($"Informe o valor da linha {linha} na coluna {coluna}:");
+                    matriz[linha, coluna] = int.Parse(Console.ReadLine());
+                }
+            }
+
+            Console.Write("Elementos da Diagonal Principal: ");
+            for (int linha = 0; linha < matriz.GetLength(0); linha++)
+            {
+                for(int coluna = 0; coluna < matriz.GetLength(1);coluna++)
+                {
+                    if(linha == coluna)
+                    {
+                        Console.Write($"{matriz[linha, coluna]} ");
+                    }
+                }
+            }
         }
 
         public void Exercicio04()
