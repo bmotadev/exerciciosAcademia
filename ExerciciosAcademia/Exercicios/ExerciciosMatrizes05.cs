@@ -242,6 +242,26 @@ namespace ExerciciosAcademia.Exercicios
                     Random random = new Random();
                     int randomNumber = random.Next(0, 100);
              * **/
+
+            Random random = new Random();
+            int maiorNumero = 0;
+            int[,] matriz = new int[4, 4];
+
+            for(int linha = 0; linha < matriz.GetLength(0); linha++)
+            {
+                for(int coluna = 0; coluna < matriz.GetLength(1); coluna++)
+                {
+                    int numeroRandom = random.Next(0, 9);
+                    matriz[linha, coluna] = numeroRandom;
+
+                    if (matriz[linha, coluna] > maiorNumero)
+                    {
+                        maiorNumero = matriz[linha, coluna];
+                    }
+                }
+            }
+
+            Console.WriteLine($"O maior número da matriz é: {maiorNumero}");
         }
 
         public void Exercicio07()
