@@ -145,7 +145,7 @@ namespace ExerciciosAcademia.Exercicios
                     -Quantos zeros existem!
              * **/
 
-            int[,] matriz = new int[5,5];
+            int[,] matriz = new int[2,2];
 
             int numerosPares = 0, numerosImpares = 0, numerosPositivos = 0, numerosNegativos = 0, numerosZeros = 0;
 
@@ -156,18 +156,19 @@ namespace ExerciciosAcademia.Exercicios
                 for(int coluna = 0; coluna < matriz.GetLength(1); coluna++)
                 {
                     Console.WriteLine($"Informe o valor da coluna {coluna+1} na linha {linha+1}");
+                    matriz[linha, coluna] = int.Parse(Console.ReadLine());
                 }
             }
 
             for(int linha = 0; linha < matriz.GetLength(0); linha++)
             {
-                for (int coluna = 0; coluna < matriz.GetLength(1); coluna ++)
+                for (int coluna = 0; coluna < matriz.GetLength(1); coluna++)
                 {
-                    if(matriz[linha,coluna] / 2 == 0)
+                    if((matriz[linha,coluna] % 2 == 0) && (matriz[linha,coluna] != 0))
                     {
                         numerosPares++;
                     }
-                    if (matriz[linha,coluna] / 2 == 1)
+                    if ((matriz[linha,coluna] % 2 == 1) || (matriz[linha,coluna] % 2 == -1))
                     {
                         numerosImpares++;
                     }
@@ -185,6 +186,12 @@ namespace ExerciciosAcademia.Exercicios
                     }
                 }
             }
+
+            Console.WriteLine($"Existem {numerosPares} números pares");
+            Console.WriteLine($"Existem {numerosImpares} números ímpares");
+            Console.WriteLine($"Existem {numerosPositivos} números positivos");
+            Console.WriteLine($"Existem {numerosNegativos} números negativos");
+            Console.WriteLine($"Existem {numerosZeros} números zeros");
         }
 
         public void Exercicio05()
