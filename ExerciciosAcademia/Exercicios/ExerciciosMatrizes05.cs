@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Globalization;
 using System.Linq;
 using System.Text;
@@ -204,9 +205,9 @@ namespace ExerciciosAcademia.Exercicios
 
             Console.WriteLine("Leia duas matrizes 2x3 de números double");
 
-            double[,] matrizA = new double[2, 2];
-            double[,] matrizB = new double[2, 2];
-            double[,] matrizResultado = new double[2, 2];
+            double[,] matrizA = new double[2, 3];
+            double[,] matrizB = new double[2, 3];
+            double[,] matrizResultado = new double[2, 3];
 
 
             // leitura da primeira matriz
@@ -256,7 +257,7 @@ namespace ExerciciosAcademia.Exercicios
             {
                 for(int coluna = 0; coluna < matriz.GetLength(1); coluna++)
                 {
-                    int numeroRandom = random.Next(0, 9);
+                    int numeroRandom = random.Next(0, 100);
                     matriz[linha, coluna] = numeroRandom;
 
                     if (matriz[linha, coluna] > maiorNumero)
@@ -274,7 +275,43 @@ namespace ExerciciosAcademia.Exercicios
             /*
              * 7) Leia duas matrizes A e B com 3x3 elementos. Construir uma matriz C, onde cada elemento de C é a subtração do elemento correspondente de A com B.
              * **/
-            int[,] matrizA = new int[4, 4];
+            int[,] matrizA = new int[3, 3];
+            int[,] matrizB = new int[3, 3];
+            int[,] matrizC = new int[3, 3];
+
+            Random random = new Random();
+
+            for (int linha = 0; linha < matrizA.GetLength(0);linha++)
+            {
+                for (int coluna = 0; coluna < matrizB.GetLength(1); coluna++)
+                {
+                    Console.WriteLine($"Informe o valor da coluna {coluna+1} na linha {linha+1} da Matriz A:");
+                    int numeroRandom = random.Next(0, 100);
+                    matrizA[linha, coluna] = numeroRandom;
+                    //matrizA[linha, coluna] = int.Parse(Console.ReadLine());
+                }
+            }
+
+            for(int linha = 0; linha < matrizB.GetLength(0); linha++)
+            {
+                for (int coluna = 0; coluna < matrizB.GetLength(1); coluna++)
+                {
+                    Console.WriteLine($"Informe o valor da coluna {coluna+1} na linha {linha+1} da Matriz B:");
+                    int numeroRandom = random.Next(0, 100);
+                    matrizB[linha, coluna] = numeroRandom;
+                    //matrizB[linha, coluna] = int.Parse(Console.ReadLine());
+                }
+            }
+
+            for(int linha = 0; linha < matrizC.GetLength(0); linha++)
+            {
+                for(int coluna = 0; coluna < matrizC.GetLength(1); coluna++)
+                {
+                    matrizC[linha, coluna] = matrizA[linha, coluna] - matrizB[linha, coluna];
+                    Console.Write($"{matrizC[linha, coluna]} | ");
+                }
+                Console.WriteLine("\n");
+            }
         }
 
         public void Exercicio08()

@@ -62,8 +62,9 @@ namespace ExerciciosAcademia
             //exerciciosMatrizes.Exercicio02();
             //exerciciosMatrizes.Exercicio03();
             //exerciciosMatrizes.Exercicio04();
-            exerciciosMatrizes.Exercicio05();
+            //exerciciosMatrizes.Exercicio05();
             //exerciciosMatrizes.Exercicio06();
+            exerciciosMatrizes.Exercicio07();
         }
     }
 }
