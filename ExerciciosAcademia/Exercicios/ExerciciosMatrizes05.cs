@@ -486,6 +486,7 @@ namespace ExerciciosAcademia.Exercicios
             /*
              * 11) Leia uma matriz A de tipo double de dimenção 3x3, crie uma nova matriz resultante da divisão dos elementos da matriz A pela soma dos seus indices.
              * **/
+
         }
 
         public void Exercicio12()
@@ -493,6 +494,28 @@ namespace ExerciciosAcademia.Exercicios
             /*
              * 12) Escreva um programa que leia os valores de uma matriz 4x3, e em seguida mostre na tela apenas os valores cuja soma dos índices (i+j) seja um número par.
              * **/
+            Random numeroRandom = new Random();
+            int[,] matriz = new int[4, 3];
+
+            for( int linha = 0; linha < matriz.GetLength(0); linha++)
+            {
+                for (int coluna = 0; coluna < matriz.GetLength(1); coluna++)
+                {
+                    matriz[linha, coluna] = numeroRandom.Next();
+                }
+            }
+
+            for(int linha = 0; linha < matriz.GetLength(0); linha++)
+            {
+                for(int coluna = 0; coluna < matriz.GetLength(1); coluna++)
+                {
+                    int calculo = (linha + coluna) % 2;
+                    if(calculo == 0)
+                    {
+                        Console.WriteLine(matriz[linha, coluna]);
+                    }
+                }
+            }
         }
 
         public void Exercicio13()
