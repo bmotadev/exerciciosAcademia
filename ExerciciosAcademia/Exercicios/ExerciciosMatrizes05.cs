@@ -411,6 +411,74 @@ namespace ExerciciosAcademia.Exercicios
             /*
              * 10) Leia duas matrizes A e B de 4x4 elementos, calcule a média dos mesmos, em seguida, diga quantos dos elementos lidos estão abaixo, acima e na média.
              * **/
+
+            double[,] matrizA = new double[4,4];
+            double[,] matrizB = new double[4,4];
+
+            double media = 0;
+            int acimaDaMedia = 0, naMedia = 0, abaixoDaMedia = 0;
+
+            Random numeroRandom = new Random();
+
+            for(int linha = 0; linha < matrizA.GetLength(0); linha++)
+            {
+                for(int coluna = 0; coluna < matrizA.GetLength(1); coluna++)
+                {
+                    matrizA[linha, coluna] = numeroRandom.NextDouble();
+                }
+            }
+
+            for (int linha = 0; linha < matrizB.GetLength(0); linha++)
+            {
+                for (int coluna = 0; coluna < matrizB.GetLength(1); coluna++)
+                {
+                    matrizB[linha, coluna] = numeroRandom.NextDouble();
+                }
+            }
+
+            for (int linha = 0; linha < matrizA.GetLength(0); linha++)
+            {
+                for(int coluna = 0; coluna < matrizA.GetLength(1);coluna++)
+                {
+                    media += matrizA[linha, coluna] + matrizB[linha, coluna];
+                }
+            }
+
+            media = media / 32;
+
+            for (int linha = 0; linha < matrizA.GetLength(0); linha++)
+            {
+                for (int coluna = 0; coluna < matrizA.GetLength(1); coluna++)
+                {
+                    if(matrizA[linha, coluna] > media)
+                    {
+                        acimaDaMedia++;
+                    }
+                    if (matrizB[linha, coluna] > media)
+                    {
+                        acimaDaMedia++;
+                    }
+                    if (matrizA[linha, coluna] == media)
+                    {
+                        naMedia++;
+                    }
+                    if (matrizB[linha, coluna] == media)
+                    {
+                        naMedia++;
+                    }
+                    if (matrizA[linha, coluna] < media)
+                    {
+                        abaixoDaMedia++;
+                    }
+                    if (matrizB[linha, coluna] < media)
+                    {
+                        abaixoDaMedia++;
+                    }
+                }
+            }
+
+            Console.WriteLine($"\n{naMedia} elementos na media. \n{acimaDaMedia} elementos acima da média. \n{abaixoDaMedia} elementos abaixo da media.");
+
         }
 
         public void Exercicio11()
