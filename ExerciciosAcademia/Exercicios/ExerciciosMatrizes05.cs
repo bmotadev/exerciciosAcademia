@@ -319,6 +319,44 @@ namespace ExerciciosAcademia.Exercicios
             /*
              * 8) Ler uma matriz com 4x4 de inteiros e mostrar os números na ordem direta e inversa a que foram lidos.
              * **/
+
+            //Random random = new Random();
+            int[,] matriz = new int[4, 4];
+
+            for(int linha = 0; linha < matriz.GetLength(0); linha++)
+            {
+                for(int coluna = 0; coluna < matriz.GetLength(1); coluna++)
+                {
+                    int numeroRandom = int.Parse(Console.ReadLine());
+                    matriz[linha, coluna] = numeroRandom;
+
+                }
+            }
+            Console.BackgroundColor = ConsoleColor.Green;
+            Console.WriteLine("Valores na Ordem Direta");
+            Console.ResetColor();
+
+            for (int linha = 0; linha < matriz.GetLength(0); linha++)
+            {
+                for(int coluna = 0; coluna < matriz.GetLength(1); coluna++)
+                {
+                    Console.Write($" {matriz[linha, coluna]} |");
+                }
+                Console.WriteLine();
+            }
+
+            Console.BackgroundColor = ConsoleColor.Green;
+            Console.WriteLine("\nValores na ordem inversa");
+            Console.ResetColor();
+
+            for (int linha = 3; linha >= 0; linha--)
+            {
+                for(int coluna = 3; coluna >= 0; coluna--)
+                {
+                    Console.Write($" {matriz[linha, coluna]} |");
+                }
+                Console.WriteLine();
+            }
         }
 
         public void Exercicio09()
@@ -327,6 +365,45 @@ namespace ExerciciosAcademia.Exercicios
              * 9) Leia uma matriz 3x3.  Em seguida, solicite um número qualquer ao usuário e pesquise na matriz se o número existe.  
                     Caso, seja verdade imprima a mensagem:  “O número existe no vetor” , caso contrário “Número inexistente”.
              * **/
+
+            Random numeroRandom = new Random();
+            int[,] matriz = new int[3, 3];
+
+            
+
+            for (int linha = 0; linha < matriz.GetLength(0); linha++)
+            {
+                for(int coluna = 0; coluna < matriz.GetLength(1); coluna++)
+                {
+                    matriz[linha, coluna] = numeroRandom.Next(0, 9);
+                    Console.WriteLine(matriz[linha,coluna]);
+                }
+            }
+
+            Console.WriteLine("Digite um numero:");
+            int numeroUsuario = int.Parse(Console.ReadLine());
+
+            for (int linha = 0; linha < matriz.GetLength(0); linha++)
+            {
+                for (int coluna = 0; coluna < matriz.GetLength(1); coluna++)
+                {
+                    if (matriz[linha, coluna] == numeroUsuario)
+                    {
+                        Console.WriteLine("O número existe no vetor");
+                        break;
+                    }
+                    else if ( (linha == 2) && (coluna == 2) && (matriz[linha, coluna] != numeroUsuario))
+                    {
+                        Console.WriteLine("Número inexistente.");
+
+                    }
+                }
+            }
+
+
+
+
+            
         }
 
         public void Exercicio10()
