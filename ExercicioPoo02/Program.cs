@@ -15,6 +15,7 @@ namespace ExercicioPoo02
 
             Computador computador = new Computador();
             Computador computador2 = new Computador();
+            Computador comp3 = new Computador("Lenovo", "Teste", 1500, "teste");
 
             Console.WriteLine("Informe a marca:");
             computador.marca = Console.ReadLine();
@@ -38,6 +39,9 @@ namespace ExercicioPoo02
 
             Console.WriteLine("Computador 2");
             computador2.exibeDados();
+
+            Console.WriteLine("Computador 3");
+            comp3.exibeDados();
         }
     }
 }
