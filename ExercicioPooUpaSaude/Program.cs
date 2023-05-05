@@ -19,6 +19,18 @@ namespace ExercicioPooUpaSaude
             //Triagem
             //Consulta
             //ProfissionalSaude
+
+            UnidadeSaude unidade = new UnidadeSaude("Teste", "TEST");
+
+            unidade.Responsavel.Nome = "";
+            unidade.Responsavel.Tipo = "";
+            unidade.Responsavel.RegistroConselho = "";
+
+            Paciente paciente = new Paciente("Bruno Mota", "32312321", DateOnly.Parse("21/10/1991"), "email@email.com");
+
+            ProfissionalSaude profissional = new ProfissionalSaude("Bruno", "Teste", "teste");
+
+            Triagem triagem = new Triagem(profissional, paciente, 78, 1.81, 118, 38, "verde");
         }
     }
 }
