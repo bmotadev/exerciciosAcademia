@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioPoo02", "Exercicio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioPoo03", "ExercicioPoo03\ExercicioPoo03.csproj", "{8A5FB2BD-61BD-49B2-9FCA-D619DBBDF565}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioPooUpaSaude", "ExercicioPooUpaSaude\ExercicioPooUpaSaude.csproj", "{5F32BAF1-A830-47DF-AD81-D4AF5FBA1E0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioPooUpaSaude", "ExercicioPooUpaSaude\ExercicioPooUpaSaude.csproj", "{5F32BAF1-A830-47DF-AD81-D4AF5FBA1E0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioPooPessoa", "ExercicioPooPessoa\ExercicioPooPessoa.csproj", "{4F1FF6A9-8BD1-4718-B74A-FEEAB3916DE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{5F32BAF1-A830-47DF-AD81-D4AF5FBA1E0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F32BAF1-A830-47DF-AD81-D4AF5FBA1E0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F32BAF1-A830-47DF-AD81-D4AF5FBA1E0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F1FF6A9-8BD1-4718-B74A-FEEAB3916DE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F1FF6A9-8BD1-4718-B74A-FEEAB3916DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F1FF6A9-8BD1-4718-B74A-FEEAB3916DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F1FF6A9-8BD1-4718-B74A-FEEAB3916DE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
