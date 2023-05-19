@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioPoo03", "Exercicio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioPooUpaSaude", "ExercicioPooUpaSaude\ExercicioPooUpaSaude.csproj", "{5F32BAF1-A830-47DF-AD81-D4AF5FBA1E0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioPooPessoa", "ExercicioPooPessoa\ExercicioPooPessoa.csproj", "{4F1FF6A9-8BD1-4718-B74A-FEEAB3916DE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioPooPessoa", "ExercicioPooPessoa\ExercicioPooPessoa.csproj", "{4F1FF6A9-8BD1-4718-B74A-FEEAB3916DE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioPooVeiculo", "ExercicioPooVeiculo\ExercicioPooVeiculo.csproj", "{BD1B6B44-E7B8-4945-B936-D5F6C68B5661}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioPooVeiculo", "ExercicioPooVeiculo\ExercicioPooVeiculo.csproj", "{BD1B6B44-E7B8-4945-B936-D5F6C68B5661}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgramaLeitorGlicemia", "ProgramaLeitorGlicemia\ProgramaLeitorGlicemia.csproj", "{491F61EB-BCB6-4FF0-8112-29BB3F5FE370}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{BD1B6B44-E7B8-4945-B936-D5F6C68B5661}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD1B6B44-E7B8-4945-B936-D5F6C68B5661}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD1B6B44-E7B8-4945-B936-D5F6C68B5661}.Release|Any CPU.Build.0 = Release|Any CPU
+		{491F61EB-BCB6-4FF0-8112-29BB3F5FE370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{491F61EB-BCB6-4FF0-8112-29BB3F5FE370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{491F61EB-BCB6-4FF0-8112-29BB3F5FE370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{491F61EB-BCB6-4FF0-8112-29BB3F5FE370}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
